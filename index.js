@@ -15,9 +15,7 @@ function goLeft() {
     It scampers off down a samll hole, just large enough for you to crawl 
     through. Do you follow it, or continue on your path?`);
   if (secondAnswer === "follow") {
-   
-  } else if (secondAnswer === 'continue') {
-
+  } else if (secondAnswer === "continue") {
   }
 }
 
@@ -27,20 +25,18 @@ function goRight() {
     path would lead you away from the dragon all together. Which 
     do you take?`);
   if (secondAnswer === "stay") {
-   
-  } else if (secondAnswer === 'run') {
-      
+  } else if (secondAnswer === "run") {
   }
 }
 
 // Third round of decisions
 function goFollow() {
   let thirdAnswer = window.prompt(
-    `You follow the cat to a colony of cats, snuggled in a fort 
-    of warm blankets and subsisting off of inexplicably warm 
-    soup. They are content with you staying, but you wonder if 
-    you should alert the world to this magical safe haven.`);
-    if 
+    `You follow the cat to a colony of cats, snuggled in a fort
+    of warm blankets and subsisting off of inexplicably warm
+    soup. They are content with you staying, but you wonder if
+    you should alert the world to this magical safe haven.`
+  );
 }
 
 start();
