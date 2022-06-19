@@ -1,7 +1,8 @@
-// First decision
+start();
+
+// FIRST choice
 function start() {
   let firstanswer = window.prompt("Do you head left, or right?");
-
   if (firstanswer == "left") {
     goLeft();
   } else if (firstanswer == "right") {
@@ -9,13 +10,15 @@ function start() {
   }
 }
 
-// Second round of decisions
+// SECOND set of choices
 function goLeft() {
   let secondAnswer = window.prompt(`You come across a stray cat. 
     It scampers off down a samll hole, just large enough for you to crawl 
     through. Do you follow it, or continue on your path?`);
   if (secondAnswer === "follow") {
+    goFollow();
   } else if (secondAnswer === "continue") {
+    goContinue();
   }
 }
 
@@ -29,7 +32,7 @@ function goRight() {
   }
 }
 
-// Third round of decisions
+// THIRD set of choices
 function goFollow() {
   let thirdAnswer = window.prompt(
     `You follow the cat to a colony of cats, snuggled in a fort
@@ -39,4 +42,11 @@ function goFollow() {
   );
 }
 
-start();
+function goContinue() {
+  let thirdAnswer = window.prompt(
+    `You come across a chamber that extends upward to a shining 
+    light above. There is a long, winding staircase and a much 
+    quicker, but rickety-looking, ladder that lead up towards 
+    the light. Which do you take?`
+  );
+}
